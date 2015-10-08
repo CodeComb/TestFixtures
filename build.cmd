@@ -27,10 +27,12 @@ IF %BUILDCMD_KOREBUILD_VERSION%=="" (
 .nuget\nuget.exe install Sake -ExcludeVersion -Out packages
 
 IF "%SKIP_DNX_INSTALL%"=="1" goto run
-
-CALL packages\KoreBuild\build\dnvm install 1.0.0-rc1-15828 -arch x86 -u
+IF %BUILDCMD_DNX_VERSION%=="" (
+	CALL packages\KoreBuild\build\dnvm upgrade -runtime CLR -arch x86
+) ELSE (
+	CALL packages\KoreBuild\build\dnvm install %BUILDCMD_DNX_VERSION% -runtime CLR -arch x86 -alias default
+)
 CALL packages\KoreBuild\build\dnvm install default -runtime CoreCLR -arch x86
-CALL packages\KoreBuild\build\dnvm use 1.0.0-rc1-15828
 
 :run
 CALL packages\KoreBuild\build\dnvm use default -runtime CLR -arch x86
