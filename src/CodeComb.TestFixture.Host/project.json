@@ -1,0 +1,26 @@
+﻿{
+  "title": "CodeComb.TestFixture.Host",
+  "version": "1.0.0-*",
+  "description": "ASP.Net Dnx Test Host",
+  "copyright": "Harbin Code Comb Technology Co.,Ltd",
+  "authors": [
+    "AmamiyaYuuko"
+  ],
+  "tags": [
+    "vNext",
+    "ASP.Net",
+    "MVC",
+    "Dnx",
+    "Host"
+  ],
+  "iconUrl": "http://www.1234.sh/images/logo.png",
+  "projectUrl": "",
+  "licenseUrl": "",
+  "dependencies": {
+    "CodeComb.TestFixture": "1.0.0-*"
+  },
+  "frameworks": {
+    "dnx451": {},
+    "dnxcore50": {}
+  }
+}
