@@ -1,9 +1,9 @@
 ﻿using System.IO;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Framework.DependencyInjection;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Dnx.Runtime.Infrastructure;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Testing;
+using Microsoft.Framework.Logging;
+using Microsoft.Framework.Logging.Testing;
 
 namespace CodeComb.TestFixture.Mvc
 {

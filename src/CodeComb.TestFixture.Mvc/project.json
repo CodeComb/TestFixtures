@@ -17,8 +17,8 @@
   "projectUrl": "",
   "licenseUrl": "",
   "dependencies": {
-    "Microsoft.AspNet.Identity": "3.0.0-*",
-    "CodeComb.TestFixture": "2.0.0-*",
+    "Microsoft.AspNet.Identity": "3.0.0-beta8",
+    "CodeComb.TestFixture": "2.0.0-beta8",
     "Moq": "4.2.1507.118"
   },
   "frameworks": {

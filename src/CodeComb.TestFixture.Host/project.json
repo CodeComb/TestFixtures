@@ -17,7 +17,7 @@
   "projectUrl": "",
   "licenseUrl": "",
   "dependencies": {
-    "CodeComb.TestFixture": "2.0.0-*"
+    "CodeComb.TestFixture": "2.0.0-beta8"
   },
   "frameworks": {
     "dnx451": {},
