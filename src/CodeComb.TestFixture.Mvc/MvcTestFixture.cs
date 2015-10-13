@@ -4,9 +4,9 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Dnx.Runtime.Infrastructure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Testing;
+using Microsoft.Framework.DependencyInjection;
+using Microsoft.Framework.Logging;
+using Microsoft.Framework.Logging.Testing;
 using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Http.Internal;
 using Microsoft.AspNet.Hosting;
@@ -40,13 +40,13 @@ namespace CodeComb.TestFixture.Mvc
                 .Returns(httpResponse.Object);
             var httpRequest = new Mock<HttpRequest>();
             httpRequest.Setup(x => x.Query)
-                .Returns(new ReadableStringCollection(new Dictionary<string, Microsoft.Extensions.Primitives.StringValues>()));
+                .Returns(new ReadableStringCollection(new Dictionary<string, Microsoft.Framework.Primitives.StringValues>()));
             httpRequest.Setup(x => x.QueryString)
                 .Returns(new QueryString());
             httpRequest.Setup(x => x.Headers)
                 .Returns(new HeaderDictionary());
             httpRequest.Setup(x => x.Cookies)
-                .Returns(new ReadableStringCollection(new Dictionary<string, Microsoft.Extensions.Primitives.StringValues>()));
+                .Returns(new ReadableStringCollection(new Dictionary<string, Microsoft.Framework.Primitives.StringValues>()));
             httpContext.Setup(x => x.Request)
                 .Returns(httpRequest.Object);
             var auth = new Mock<AuthenticationManager>();

@@ -1,6 +1,6 @@
 ﻿{
   "title": "CodeComb.TestFixture",
-  "version": "1.0.0-*",
+  "version": "2.0.0-beta8",
   "description": "ASP.Net Dnx Test Infrastructure",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
   "authors": [ "AmamiyaYuuko" ],
@@ -10,11 +10,11 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Microsoft.Extensions.Logging.Testing": "1.0.0-*",
-    "xunit.runner.aspnet": "2.0.0-aspnet-*",
-    "Microsoft.AspNet.TestHost": "1.0.0-*",
-    "Microsoft.AspNet.Testing": "1.0.0-*",
-    "Microsoft.AspNet.Mvc.Formatters.Xml": "6.0.0-*"
+    "Microsoft.Framework.Logging": "1.0.0-beta8",
+    "xunit.runner.aspnet": "2.0.0-aspnet-beta8",
+    "Microsoft.AspNet.TestHost": "1.0.0-beta8",
+    "Microsoft.AspNet.Testing": "1.0.0-beta8",
+    "Microsoft.AspNet.Mvc.Formatters.Xml": "6.0.0-beta8"
   },
 
   "frameworks": {

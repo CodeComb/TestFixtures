@@ -14,9 +14,9 @@ using Microsoft.AspNet.Testing;
 using Microsoft.AspNet.Mvc.Infrastructure;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Dnx.Runtime.Infrastructure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Testing;
+using Microsoft.Framework.DependencyInjection;
+using Microsoft.Framework.Logging;
+using Microsoft.Framework.Logging.Testing;
 using Newtonsoft.Json;
 
 namespace CodeComb.TestFixture
