@@ -74,7 +74,6 @@ namespace CodeComb.TestFixture
             using (new CultureReplacer())
             {
                 server = TestServer.Create(
-                    CallContextServiceLocator.Locator.ServiceProvider,
                     configureApplication,
                     configureServices: InitializeServices(startupTypeInfo.Assembly, buildServices));
             }
