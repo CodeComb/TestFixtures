@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Dnx.Runtime;
-using Microsoft.Dnx.Runtime.Infrastructure;
+using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Testing;
 
