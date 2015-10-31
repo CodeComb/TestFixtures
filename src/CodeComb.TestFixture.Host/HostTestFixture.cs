@@ -10,7 +10,6 @@ using System.Reflection;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.TestHost;
-using Microsoft.AspNet.Testing;
 using Microsoft.AspNet.Mvc.Infrastructure;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Dnx.Runtime.Infrastructure;
@@ -19,7 +18,7 @@ using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Testing;
 using Newtonsoft.Json;
 
-namespace CodeComb.TestFixture
+namespace CodeComb.TestFixture.Host
 {
     public class HostTestFixture
     {
