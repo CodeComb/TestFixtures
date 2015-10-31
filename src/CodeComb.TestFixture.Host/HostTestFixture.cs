@@ -10,7 +10,6 @@ using System.Reflection;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.TestHost;
-using Microsoft.AspNet.Testing;
 using Microsoft.AspNet.Mvc.Infrastructure;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +17,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Testing;
 using Newtonsoft.Json;
 
-namespace CodeComb.TestFixture
+namespace CodeComb.TestFixture.Host
 {
     public class HostTestFixture
     {
@@ -43,7 +42,6 @@ namespace CodeComb.TestFixture
                     .DeclaredMethods
                     .FirstOrDefault(m => m.Name == "Configure" && m.GetParameters().Length == 2)
                     ?.CreateDelegate(typeof(Action<IApplicationBuilder, ILoggerFactory>), startupInstance);
-                // Debug.Assert(configureWithLogger != null);
 
                 configureApplication = application => configureWithLogger(application, NullLoggerFactory.Instance);
             }
@@ -58,7 +56,6 @@ namespace CodeComb.TestFixture
                     .DeclaredMethods
                     .FirstOrDefault(m => m.Name == "ConfigureServices" && m.ReturnType == typeof(void))
                     ?.CreateDelegate(typeof(Action<IServiceCollection>), startupInstance);
-                // Debug.Assert(configureServices != null);
 
                 buildServices = services =>
                 {
@@ -70,12 +67,9 @@ namespace CodeComb.TestFixture
             // RequestLocalizationOptions saves the current culture when constructed, potentially changing response
             // localization i.e. RequestLocalizationMiddleware behavior. Ensure the saved culture
             // (DefaultRequestCulture) is consistent regardless of system configuration or personal preferences.
-            using (new CultureReplacer())
-            {
-                server = TestServer.Create(
-                    configureApplication,
-                    configureServices: InitializeServices(startupTypeInfo.Assembly, buildServices));
-            }
+            server = TestServer.Create(
+                configureApplication,
+                configureServices: InitializeServices(startupTypeInfo.Assembly, buildServices));
 
             client = server.CreateClient();
             wsclient = server.CreateWebSocketClient();
