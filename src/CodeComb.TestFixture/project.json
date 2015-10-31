@@ -11,7 +11,6 @@
 
   "dependencies": {
     "Microsoft.Extensions.Logging.Testing": "1.0.0-*",
-    "xunit.runner.aspnet": "2.0.0-aspnet-*",
     "Microsoft.AspNet.TestHost": "1.0.0-*",
     "Microsoft.AspNet.Testing": "1.0.0-*",
     "Microsoft.AspNet.Mvc.Formatters.Xml": "6.0.0-*"
