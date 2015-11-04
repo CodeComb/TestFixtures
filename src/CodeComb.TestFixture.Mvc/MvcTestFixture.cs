@@ -10,6 +10,7 @@ using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Http.Internal;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http.Authentication;
+using Microsoft.Extensions.Primitives;
 using Microsoft.AspNet.Identity;
 using Moq;
 
@@ -39,13 +40,13 @@ namespace CodeComb.TestFixture.Mvc
                 .Returns(httpResponse.Object);
             var httpRequest = new Mock<HttpRequest>();
             httpRequest.Setup(x => x.Query)
-                .Returns(new ReadableStringCollection(new Dictionary<string, Microsoft.Extensions.Primitives.StringValues>()));
+                .Returns(new QueryCollection(new Dictionary<string, StringValues>()));
             httpRequest.Setup(x => x.QueryString)
                 .Returns(new QueryString());
             httpRequest.Setup(x => x.Headers)
                 .Returns(new HeaderDictionary());
             httpRequest.Setup(x => x.Cookies)
-                .Returns(new ReadableStringCollection(new Dictionary<string, Microsoft.Extensions.Primitives.StringValues>()));
+                .Returns(new RequestCookieCollection(new Dictionary<string, string>()));
             httpContext.Setup(x => x.Request)
                 .Returns(httpRequest.Object);
             var auth = new Mock<AuthenticationManager>();
