@@ -24,7 +24,7 @@ namespace CodeComb.TestFixture.Mvc
             var services = new ServiceCollection();
             if (configureServices != null)
                 configureServices(services);
-            services.AddInstance<ILoggerFactory>(NullLoggerFactory.Instance);
+            services.AddSingleton<ILoggerFactory>(NullLoggerFactory.Instance);
             services.AddLogging();
             
             var httpContext = new Mock<HttpContext>();
@@ -59,7 +59,7 @@ namespace CodeComb.TestFixture.Mvc
             var accessor = new Mock<IHttpContextAccessor>();
             accessor.Setup(x => x.HttpContext)
                 .Returns(httpContext.Object);
-            services.AddInstance(accessor.Object);
+            services.AddSingleton(accessor.Object);
 
             var manifest = CallContextServiceLocator.Locator.ServiceProvider.GetService<IRuntimeServices>();
             if (manifest != null)
@@ -75,7 +75,7 @@ namespace CodeComb.TestFixture.Mvc
             {
                 EnvironmentName = environmentName
             };
-            services.AddInstance<IHostingEnvironment>(host);
+            services.AddSingleton<IHostingEnvironment>(host);
             services.AddTestApplicationEnvironment<TStartup>();
             startup.ConfigureServices(services);
 
