@@ -11,7 +11,7 @@ namespace CodeComb.TestFixture.Mvc
         public static IServiceCollection AddTestApplicationEnvironment<TStartup>(this IServiceCollection self)
     where TStartup : class
         {
-            self.AddInstance<ILoggerFactory>(NullLoggerFactory.Instance);
+            self.AddSingleton<ILoggerFactory>(NullLoggerFactory.Instance);
             var type = typeof(TStartup);
             var applicationServices = CallContextServiceLocator.Locator.ServiceProvider;
             var libraryManager = applicationServices.GetRequiredService<ILibraryManager>();
@@ -20,7 +20,7 @@ namespace CodeComb.TestFixture.Mvc
             var applicationRoot = Path.GetDirectoryName(library.Path);
             var applicationEnvironment = applicationServices.GetRequiredService<IApplicationEnvironment>();
             var env = new TestApplicationEnvironment(applicationEnvironment, applicationName, applicationRoot);
-            self.AddInstance<IApplicationEnvironment>(
+            self.AddSingleton<IApplicationEnvironment>(
                     new TestApplicationEnvironment(applicationEnvironment, applicationName, applicationRoot));
             return self;
         }
