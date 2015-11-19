@@ -66,6 +66,10 @@ namespace CodeComb.TestFixture
                 };
             }
 
+            server = TestServer.Create(
+                configureApplication,
+                configureServices: InitializeServices(startupTypeInfo.Assembly, buildServices));
+
             client = server.CreateClient();
             wsclient = server.CreateWebSocketClient();
         }
