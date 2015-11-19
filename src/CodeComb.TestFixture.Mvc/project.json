@@ -1,6 +1,6 @@
 ﻿{
   "title": "CodeComb.TestFixture.Mvc",
-  "version": "2.0.0-*",
+  "version": "2.0.0-rc1-final",
   "description": "ASP.Net vNext Mvc test fixture",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
   "authors": [
@@ -17,11 +17,11 @@
   "projectUrl": "",
   "licenseUrl": "",
   "dependencies": {
-    "Microsoft.AspNet.Identity": "3.0.0-*",
-    "CodeComb.TestFixture": "2.0.0-*",
+    "Microsoft.AspNet.Identity": "3.0.0-rc1-final",
+    "CodeComb.TestFixture": "2.0.0-rc1-final",
     "Moq": "4.2.1507.118"
   },
   "frameworks": {
-    "dnx451": {}
+    "net451": { }
   }
 }

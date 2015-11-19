@@ -10,7 +10,6 @@ using System.Reflection;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.TestHost;
-using Microsoft.AspNet.Testing;
 using Microsoft.AspNet.Mvc.Infrastructure;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.DependencyInjection;
@@ -65,16 +64,6 @@ namespace CodeComb.TestFixture
                     configureServices(services);
                     return services.BuildServiceProvider();
                 };
-            }
-
-            // RequestLocalizationOptions saves the current culture when constructed, potentially changing response
-            // localization i.e. RequestLocalizationMiddleware behavior. Ensure the saved culture
-            // (DefaultRequestCulture) is consistent regardless of system configuration or personal preferences.
-            using (new CultureReplacer())
-            {
-                server = TestServer.Create(
-                    configureApplication,
-                    configureServices: InitializeServices(startupTypeInfo.Assembly, buildServices));
             }
 
             client = server.CreateClient();
