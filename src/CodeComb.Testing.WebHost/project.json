@@ -1,5 +1,5 @@
 ﻿{
-  "title": "CodeComb.TestFixture.WebHost",
+  "title": "CodeComb.Testing.WebHost",
   "version": "2.0.0-*",
   "description": "ASP.Net Dnx Test Web Host",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
@@ -18,7 +18,7 @@
   "licenseUrl": "",
   "dependencies": {
     "Microsoft.AspNet.Mvc.Core": "6.0.0-*",
-    "CodeComb.TestFixture": "2.0.0-*"
+    "CodeComb.Testing": "2.0.0-*"
   },
   "frameworks": {
     "net451": {

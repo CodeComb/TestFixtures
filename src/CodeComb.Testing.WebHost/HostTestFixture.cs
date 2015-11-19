@@ -16,7 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace CodeComb.TestFixture.WebHost
+namespace CodeComb.Testing.WebHost
 {
     public class WebHostTestFixture
     {

@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5.1": {
-      "CodeComb.TestFixture/2.0.0": {
+      "CodeComb.Testing/2.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -798,7 +798,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x86": {
-      "CodeComb.TestFixture/2.0.0": {
+      "CodeComb.Testing/2.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -1593,7 +1593,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x64": {
-      "CodeComb.TestFixture/2.0.0": {
+      "CodeComb.Testing/2.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -2389,9 +2389,9 @@
     }
   },
   "libraries": {
-    "CodeComb.TestFixture/2.0.0": {
+    "CodeComb.Testing/2.0.0": {
       "type": "project",
-      "path": "../CodeComb.TestFixture/project.json"
+      "path": "../CodeComb.Testing/project.json"
     },
     "Microsoft.AspNet.Authentication/1.0.0-rc2-16039": {
       "type": "package",
@@ -3349,7 +3349,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.AspNet.Identity >= 3.0.0-*",
-      "CodeComb.TestFixture >= 2.0.0-*",
+      "CodeComb.Testing >= 2.0.0-*",
       "Moq >= 4.2.1510.2205"
     ],
     ".NETFramework,Version=v4.5.1": []

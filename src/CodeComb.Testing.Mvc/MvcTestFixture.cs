@@ -13,7 +13,7 @@ using Microsoft.Extensions.Primitives;
 using Microsoft.AspNet.Identity;
 using Moq;
 
-namespace CodeComb.TestFixture.Mvc
+namespace CodeComb.Testing.Mvc
 {
     public class MvcTestFixture<TStartup>
         where TStartup : class, new()

@@ -1,4 +1,4 @@
-# TestFixtures
+# Testing
 
 AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/6auell14wo0qt95v/branch/dev?svg=true)](https://ci.appveyor.com/project/Kagamine/testfixtures/branch/dev)
 

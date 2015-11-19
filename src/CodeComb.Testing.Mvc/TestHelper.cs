@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.Logging;
 
-namespace CodeComb.TestFixture.Mvc
+namespace CodeComb.Testing.Mvc
 {
     public static class TestHelper
     {
