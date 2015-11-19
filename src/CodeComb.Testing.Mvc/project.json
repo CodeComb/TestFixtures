@@ -1,7 +1,7 @@
 ﻿{
-  "title": "CodeComb.TestFixture.WebHost",
+  "title": "CodeComb.Testing.Mvc",
   "version": "2.0.0-rc1-final",
-  "description": "ASP.Net Dnx Test Web Host",
+  "description": "ASP.Net vNext Mvc test fixture",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
   "authors": [
     "AmamiyaYuuko"
@@ -10,8 +10,6 @@
     "vNext",
     "ASP.Net",
     "MVC",
-    "Unit Test",
-    "Test Fixtures",
     "Dnx",
     "Host"
   ],
@@ -19,10 +17,11 @@
   "projectUrl": "",
   "licenseUrl": "",
   "dependencies": {
-    "CodeComb.TestFixture": "2.0.0-rc1-final"
+    "Microsoft.AspNet.Identity": "3.0.0-rc1-final",
+    "CodeComb.Testing": "2.0.0-rc1-final",
+    "Moq": "4.2.1507.118"
   },
   "frameworks": {
-    "net451": { },
-    "dotnet5.4": { }
+    "net451": { }
   }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
+using Microsoft.Extensions.Logging;
 
-namespace Microsoft.Extensions.Logging.Testing
+namespace CodeComb.Testing
 {
     public class NullLoggerFactory : ILoggerFactory
     {

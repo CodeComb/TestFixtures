@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Testing;
 using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Http.Internal;
 using Microsoft.AspNet.Hosting;
@@ -13,7 +12,7 @@ using Microsoft.AspNet.Http.Authentication;
 using Microsoft.AspNet.Identity;
 using Moq;
 
-namespace CodeComb.TestFixture.Mvc
+namespace CodeComb.Testing.Mvc
 {
     public class MvcTestFixture<TStartup>
         where TStartup : class, new()

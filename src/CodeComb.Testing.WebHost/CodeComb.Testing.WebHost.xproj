@@ -6,12 +6,11 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>4d37b5d9-d019-4672-9efa-fcee4bbdd439</ProjectGuid>
-    <RootNamespace>CodeComb.TestFixture.Mvc</RootNamespace>
+    <ProjectGuid>605b2e10-a6fa-41de-89ea-3edb1f4f6e00</ProjectGuid>
+    <RootNamespace>CodeComb.Testing.WebHost</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>
-
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>

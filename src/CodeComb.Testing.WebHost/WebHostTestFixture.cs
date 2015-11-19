@@ -14,10 +14,9 @@ using Microsoft.AspNet.Mvc.Infrastructure;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Testing;
 using Newtonsoft.Json;
 
-namespace CodeComb.TestFixture.WebHost
+namespace CodeComb.Testing.WebHost
 {
     public class WebHostTestFixture
     {

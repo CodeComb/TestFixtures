@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		build.cmd = build.cmd
 		build.sh = build.sh
 		src\CodeComb.TestFixture.Host\global.json = src\CodeComb.TestFixture.Host\global.json
+		src\CodeComb.TestFixture\global.json = src\CodeComb.TestFixture\global.json
+		src\CodeComb.TestFixture.Mvc\global.json = src\CodeComb.TestFixture.Mvc\global.json
 		LICENSE = LICENSE
 		makefile.shade = makefile.shade
 		NuGet.config = NuGet.config
@@ -18,11 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{410D49E5-6604-4A79-A163-B231B8F48EBB}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.TestFixture", "\\Mac\Home\项目\TestFixtures\src\CodeComb.TestFixture\CodeComb.TestFixture.xproj", "{89478672-66CD-4676-951F-C8C72884A06C}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.Testing", "src\CodeComb.Testing\CodeComb.Testing.xproj", "{89478672-66CD-4676-951F-C8C72884A06C}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.TestFixture.WebHost", "src\CodeComb.TestFixture.Host\CodeComb.TestFixture.WebHost.xproj", "{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.Testing.Mvc", "src\CodeComb.Testing.Mvc\CodeComb.Testing.Mvc.xproj", "{4D37B5D9-D019-4672-9EFA-FCEE4BBDD439}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.TestFixture.Mvc", "\\Mac\Home\项目\TestFixtures\src\CodeComb.TestFixture.Mvc\CodeComb.TestFixture.Mvc.xproj", "{4D37B5D9-D019-4672-9EFA-FCEE4BBDD439}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeComb.Testing.WebHost", "src\CodeComb.Testing.WebHost\CodeComb.Testing.WebHost.xproj", "{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,21 +36,21 @@ Global
 		{89478672-66CD-4676-951F-C8C72884A06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89478672-66CD-4676-951F-C8C72884A06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89478672-66CD-4676-951F-C8C72884A06C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D37B5D9-D019-4672-9EFA-FCEE4BBDD439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D37B5D9-D019-4672-9EFA-FCEE4BBDD439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D37B5D9-D019-4672-9EFA-FCEE4BBDD439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D37B5D9-D019-4672-9EFA-FCEE4BBDD439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89478672-66CD-4676-951F-C8C72884A06C} = {410D49E5-6604-4A79-A163-B231B8F48EBB}
-		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00} = {410D49E5-6604-4A79-A163-B231B8F48EBB}
 		{4D37B5D9-D019-4672-9EFA-FCEE4BBDD439} = {410D49E5-6604-4A79-A163-B231B8F48EBB}
+		{605B2E10-A6FA-41DE-89EA-3EDB1F4F6E00} = {410D49E5-6604-4A79-A163-B231B8F48EBB}
 	EndGlobalSection
 EndGlobal

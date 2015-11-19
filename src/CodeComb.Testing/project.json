@@ -1,5 +1,5 @@
 ﻿{
-  "title": "CodeComb.TestFixture",
+  "title": "CodeComb.Testing",
   "version": "2.0.0-rc1-final",
   "description": "ASP.Net Dnx Test Infrastructure",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
@@ -23,18 +23,18 @@
     },
     "dotnet5.4": {
       "dependencies": {
-        "System.Xml.XPath.XDocument": "4.0.1-*",
-        "System.Xml.XmlDocument": "4.0.1-*",
-        "System.Xml.XDocument": "4.0.11-*",
-        "System.Xml.ReaderWriter": "4.0.11-*",
-        "System.Xml.XPath.XmlDocument": "4.0.1-*",
-        "System.Xml.XPath": "4.0.1-*",
-        "System.Xml.XmlSerializer": "4.0.11-*",
-        "Microsoft.CSharp": "4.0.1-*",
-        "System.Collections": "4.0.11-*",
-        "System.Linq": "4.0.1-*",
-        "System.Runtime": "4.0.21-*",
-        "System.Threading": "4.0.11-*"
+        "System.Xml.XPath.XDocument": "4.0.1-beta-23516",
+        "System.Xml.XmlDocument": "4.0.1-beta-23516",
+        "System.Xml.XDocument": "4.0.11-beta-23516",
+        "System.Xml.ReaderWriter": "4.0.11-beta-23516",
+        "System.Xml.XPath.XmlDocument": "4.0.1-beta-23516",
+        "System.Xml.XPath": "4.0.1-beta-23516",
+        "System.Xml.XmlSerializer": "4.0.11-beta-23516",
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
       }
     }
   }
