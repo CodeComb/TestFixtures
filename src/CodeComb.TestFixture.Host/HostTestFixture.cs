@@ -11,14 +11,13 @@ using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.TestHost;
 using Microsoft.AspNet.Mvc.Infrastructure;
-using Microsoft.Dnx.Runtime;
-using Microsoft.Dnx.Runtime.Infrastructure;
-using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Logging;
-using Microsoft.Framework.Logging.Testing;
+using Microsoft.Extensions.PlatformAbstractions;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Testing;
 using Newtonsoft.Json;
 
-namespace CodeComb.TestFixture.Host
+namespace CodeComb.TestFixture
 {
     public class HostTestFixture
     {
@@ -65,17 +64,6 @@ namespace CodeComb.TestFixture.Host
                     configureServices(services);
                     return services.BuildServiceProvider();
                 };
-            }
-
-            // RequestLocalizationOptions saves the current culture when constructed, potentially changing response
-            // localization i.e. RequestLocalizationMiddleware behavior. Ensure the saved culture
-            // (DefaultRequestCulture) is consistent regardless of system configuration or personal preferences.
-            using (new CultureReplacer())
-            {
-                server = TestServer.Create(
-                    CallContextServiceLocator.Locator.ServiceProvider,
-                    configureApplication,
-                    configureServices: InitializeServices(startupTypeInfo.Assembly, buildServices));
             }
 
             client = server.CreateClient();
@@ -126,7 +114,7 @@ namespace CodeComb.TestFixture.Host
                     new TestApplicationEnvironment(applicationEnvironment, applicationName, applicationRoot));
 
                 var hostingEnvironment = new HostingEnvironment();
-                hostingEnvironment.Initialize(applicationRoot, "testing");
+                hostingEnvironment.Initialize(applicationRoot, null);
                 services.AddInstance<IHostingEnvironment>(hostingEnvironment);
 
                 // Inject a custom assembly provider. Overrides AddMvc() because that uses TryAdd().
