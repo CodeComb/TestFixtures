@@ -17,14 +17,14 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Testing;
 using Newtonsoft.Json;
 
-namespace CodeComb.TestFixture
+namespace CodeComb.TestFixture.WebHost
 {
-    public class HostTestFixture
+    public class WebHostTestFixture
     {
         public TestServer server { get; set; }
         public HttpClient client { get; set; }
         public WebSocketClient wsclient { get; set; }
-        public HostTestFixture(object startupInstance)
+        public WebHostTestFixture(object startupInstance)
         {
             var applicationServices = CallContextServiceLocator.Locator.ServiceProvider;
             var libraryManager = applicationServices.GetRequiredService<ILibraryManager>();

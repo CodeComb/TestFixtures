@@ -1,7 +1,7 @@
 ﻿{
-  "title": "CodeComb.TestFixture.Host",
+  "title": "CodeComb.TestFixture.WebHost",
   "version": "2.0.0-rc1-final",
-  "description": "ASP.Net Dnx Test Host",
+  "description": "ASP.Net Dnx Test Web Host",
   "copyright": "Harbin Code Comb Technology Co.,Ltd",
   "authors": [
     "AmamiyaYuuko"
