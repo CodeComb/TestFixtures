@@ -8,7 +8,7 @@ namespace CodeComb.TestFixture.WebHost
     public class WebHostTestFixture<TStartup> : WebHostTestFixture
         where TStartup : new()
     {
-        public HostTestFixture()
+        public WebHostTestFixture()
             : base(new TStartup())
         {
         }
