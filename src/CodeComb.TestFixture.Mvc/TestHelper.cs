@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Testing;
 
 namespace CodeComb.TestFixture.Mvc
 {

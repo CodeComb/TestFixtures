@@ -19,7 +19,7 @@
   "dependencies": {
     "Microsoft.AspNet.Identity": "3.0.0-*",
     "CodeComb.TestFixture": "2.0.0-*",
-    "Moq": "4.2.1507.118"
+    "Moq": "4.2.1510.2205"
   },
   "frameworks": {
     "net451": {}

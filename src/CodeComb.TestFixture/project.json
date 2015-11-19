@@ -10,8 +10,7 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Microsoft.AspNet.TestHost": "1.0.0-*",
-    "Microsoft.Extensions.Logging.Testing": "1.0.0-*"
+    "Microsoft.AspNet.TestHost": "1.0.0-*"
   },
 
   "frameworks": {
