@@ -118,7 +118,7 @@ namespace CodeComb.Testing.WebHost
                     new TestApplicationEnvironment(applicationEnvironment, applicationName, applicationRoot));
 
                 var hostingEnvironment = new HostingEnvironment();
-                hostingEnvironment.Initialize(applicationRoot, new WebHostOptions());
+                hostingEnvironment.Initialize(applicationRoot, new WebHostOptions(), null);
                 services.AddSingleton<IHostingEnvironment>(hostingEnvironment);
 
                 // Inject a custom assembly provider. Overrides AddMvc() because that uses TryAdd().

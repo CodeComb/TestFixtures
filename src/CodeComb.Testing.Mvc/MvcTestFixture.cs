@@ -83,8 +83,6 @@ namespace CodeComb.Testing.Mvc
 
             httpContext.Setup(x => x.RequestServices)
                 .Returns(provider);
-            httpContext.Setup(x => x.ApplicationServices)
-                .Returns(httpContext.Object.RequestServices);
 
             return provider;
         }
