@@ -18,10 +18,22 @@
   "licenseUrl": "",
   "dependencies": {
     "Microsoft.AspNet.Identity": "3.0.0-*",
-    "CodeComb.Testing": "2.0.0-*",
-    "Moq": "4.2.1510.2205"
+    "CodeComb.Testing": "2.0.0-*"
   },
   "frameworks": {
-    "net451": {}
+    "net451": {
+      "dependencies": {
+        "Moq": {
+          "version": "4.2.1510.2205",
+          "type": "build"
+        }
+      }
+    },
+    "dotnet5.5": {
+      "dependencies": {
+        "System.Reflection": "4.1.0-*",
+        "moq.netcore": "4.4.0-*"
+      }
+    }
   }
 }

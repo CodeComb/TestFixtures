@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.Logging;
@@ -14,7 +15,11 @@ namespace CodeComb.Testing.Mvc
             var type = typeof(TStartup);
             var applicationServices = CallContextServiceLocator.Locator.ServiceProvider;
             var libraryManager = applicationServices.GetRequiredService<ILibraryManager>();
+#if NET451
             var applicationName = type.Assembly.GetName().Name;
+#else
+            var applicationName = type.GetTypeInfo().Assembly.GetName().Name;
+#endif
             var library = libraryManager.GetLibrary(applicationName);
             var applicationRoot = Path.GetDirectoryName(library.Path);
             var applicationEnvironment = applicationServices.GetRequiredService<IApplicationEnvironment>();
