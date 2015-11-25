@@ -33,30 +33,12 @@ namespace CodeComb.Testing
 
         public string ApplicationBasePath { get; }
 
-        public string Configuration
-        {
-            get
-            {
-                return _original.Configuration;
-            }
-        }
-
         public FrameworkName RuntimeFramework
         {
             get
             {
                 return _original.RuntimeFramework;
             }
-        }
-
-        public object GetData(string name)
-        {
-            return _original.GetData(name);
-        }
-
-        public void SetData(string name, object value)
-        {
-            _original.SetData(name, value);
         }
     }
 }
